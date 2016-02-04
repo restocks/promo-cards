@@ -1,5 +1,5 @@
 var deo = require("deo");
 module.exports = deo.default({
-	numberOfCodes: 100,
+	numberOfCodes: 50,
 	pg_url: "postgres://"
 })
