@@ -1,0 +1,16 @@
+{
+  "name": "restocks-promo-cards",
+  "version": "1.0.0",
+  "description": "creates promo codes and cards for restocks",
+  "main": "codes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luke Miles",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.5.2",
+    "deo": "0.0.2",
+    "massive": "^2.1.0"
+  }
+}
