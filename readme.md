@@ -13,7 +13,7 @@ cool. you're in the right place.
 
 3. check the # of cards you want to make also in config
 
-4. `npm install; node codes.js`
+4. make sure you have graphicsmagick installed. on osx you can install it with `brew install graphicsmagick`. then do `npm install; node codes.js`
 
 5. you can order these cards at moo.com. [use my ref link for 10% off your first purchase.](https://www.moo.com/share/9kpycq)
 
