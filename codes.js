@@ -21,9 +21,11 @@ function codeMaker(number, callback) {
 
 function generateImageWithCode(code) {
 	gm("./art/back-master.png").fill('#FFFFFF')
-	    .drawText(0, 515, code, 'Center')
+	    .drawText(0, 1000, code, 'Center')
+	    // specify a custom font if you want
 	    .font('./art/CircularStd-Bold.otf')
-	    .fontSize( '180px' )
+	    // .font('Helvetica-Bold')
+	    .fontSize( '350px' )
 	    .write( "cards/" + code + ".png", function (err) {
 	        if (err) {
 	            throw err;
@@ -35,5 +37,5 @@ function doneWithCodes() {
 	console.log(config("numberOfCodes") + " codes generated and saved.");
 }
 
-// generates as many codes 
+// generates as many codes as in config.
 async.times(config("numberOfCodes"), codeMaker, doneWithCodes);
