@@ -21,9 +21,9 @@ function codeMaker(number, callback) {
 
 function generateImageWithCode(code) {
 	gm("./art/back-master.png").fill('#FFFFFF')
-	    .drawText(0, 1000, code, 'Center')
+	    .drawText(0, 515, code, 'Center')
 	    .font('./art/CircularStd-Bold.otf')
-	    .fontSize( '300px' )
+	    .fontSize( '180px' )
 	    .write( "cards/" + code + ".png", function (err) {
 	        if (err) {
 	            throw err;
